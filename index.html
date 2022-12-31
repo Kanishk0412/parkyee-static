@@ -1,11 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parkyee</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parkyee</title>
+
+  <!-- html bootstrap link  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- JavaScript link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- google font links  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Navbar Css  */
+    .navbar-brand {
+      margin-left: 35px;
+    }
+
+    .navbarLinks {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.2rem;
+      margin-left: 100px;
+    }
+
+    .navbarHomeLink {
+      border: 3px solid #39B90C;
+      border-radius: 24px;
+    }
+
+    /* Navbar Css Ends here  */
+
+
+    /* middle content css  */
+    .span1 {
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      right: 11px;
+      top: 35px;
+      font-size: 80px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    /* where are you going para  */
+    .wherePara {
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      font-size: 80px;
+      font-weight: 800;
+      text-align: center;
+      display: inline-block;
+    }
+
+    /* parking just got easier  */
+    .GreenSpan {
+      position: relative;
+      right: 50px;
+      bottom: 15px;
+      font-weight: bold;
+      font-size: 30px;
+      font-family: 'Poppins', sans-serif;
+      color: #39B90C;
+
+    }
+
+    /* bottom content para  */
+    .contentPara {
+      position: relative;
+      left: 55px;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* :horizontal rule css  */
+    .firstHr {
+
+      height: 8px;
+      position: relative;
+      left: 450px;
+      bottom: 18px;
+    }
+
+    .secondHr {
+
+      height: 8px;
+      position: relative;
+      right: 70px;
+      bottom: 18px;
+
+    }
+
+    .relativeDiv {
+      position: relative;
+    }
+
+    /* car img css  */
+    .carImg {
+      position: absolute;
+      top: 225px;
+      left: 40px;
+    }
+
+    /* map image css  */
+    .mapImg {
+      position: absolute;
+      top: 65px;
+      left: 240px;
+      height: 235px;
+      width: 235px;
+    }
+
+    /* locator image css  */
+    .locatorImg {
+      position: absolute;
+      top: 15px;
+      left: 280px;
+      height: 50;
+      width: 75px;
+    }
+
+    .bottomHr {
+      position: relative;
+      left: 200px;
+      border: 2px solid rgb(255, 250, 250);
+      background-color: rgb(255, 250, 250);
+      height: 10px;
+      width: 850px;
+      border-radius: 24px;
+      margin-top: 15px;
+      margin-bottom: 60px;
+    }
+
+    .circle {
+      border: 2px solid #39B90C;
+      background-color: #39B90C;
+      border-radius: 100%;
+      height: 60px;
+      width: 60px;
+      position: absolute;
+      right: 600px;
+      bottom: 20px;
+    }
+
+    .arrow {
+      width: 50px;
+      height: 30px;
+      position: relative;
+      left: 608px;
+      bottom: 105px;
+      z-index: +1;
+
+    }
+
+    .wwd {
+      display: inline-block;
+      border: 2px solid #39B90C;
+      border-radius: 43px;
+      padding: 5px 70px 0 20px;
+      /* margin-bottom: 20px; */
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      left: 125px;
+      font-size: 35px;
+    }
+
+    .circle2 {
+      position: relative;
+      left: 70px;
+      bottom: 10px;
+      height: 20px;
+      width: 20px;
+    }
+
+    .cardpic1 {
+      position: relative;
+      left: 210px;
+      bottom: 220px;
+      height: 50px;
+      width: 40px;
+    }
+
+    .cardpic2 {
+      position: relative;
+      left: 210px;
+      bottom: 180px;
+      height: 50px;
+      width: 50px;
+    }
+
+    .cardpic3 {
+      position: relative;
+      left: 210px;
+      bottom: 145px;
+      height: 50px;
+      width: 40px;
+    }
+
+    .card-title {
+      font-family: 'Poppins';
+      font-weight: bolder;
+      font-size: 40px;
+      color: rgb(74, 74, 74);
+      padding-left: 15px;
+    }
+
+    .card-text {
+      font-family: 'poppins';
+      font-size: 25px;
+      padding-left: 15px;
+      color: #39B90C;
+    }
+
+
+    .first-card {
+      position: absolute;
+      left: 125px;
+      width: 300px;
+      height: 250px;
+      border-radius: 52px;
+    }
+
+    .second-card {
+      position: absolute;
+      left: 350px;
+      width: 300px;
+      height: 250px;
+      border-radius: 52px;
+    }
+
+    .third-card {
+      position: absolute;
+      left: 700px;
+      width: 300px;
+      height: 250px;
+      border-radius: 52px;
+    }
+
+    .card-hr1 {
+      position: absolute;
+      top: 800px;
+      border: 3px solid #39B90C;
+      background-color: #39B90C;
+      height: 100px;
+      width: 130px;
+    }
+
+    .card-hr2 {
+      position: absolute;
+      top: 800px;
+      right: 0px;
+      border: 3px solid #39B90C;
+      background-color: #39B90C;
+      height: 100px;
+      width: 140px;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- Navbar Starts From Here  -->
+
+  <nav class="navbar navbar-expand-lg mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/parkyee.png" alt="Logo" width="205px" height="75.98px" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link active navbarLinks navbarHomeLink" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbarLinks" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbarLinks" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbarLinks" href="#">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar ends here  -->
+
+
+  <!-- middle content starts here  -->
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-6">
+        <span class="span1">Where are</span>
+        <p class="wherePara"> you going?</p>
+        <h3><span class="GreenSpan"> Parking just got easier
+          </span></h3>
+        <img src="./Images/hr1.png" alt="firstHr" class="firstHr">
+        <img src="./Images/hr2.png" alt="secondHr" class="secondHr">
+        <!-- <hr class="firstHr" noshade color="#2e9e08" size="3px">
+            <hr  class="secondHr" noshade color="#2e9e08" size="3px"> -->
+        <p class="contentPara">Traditional parking takes a lot of time. In today’s new age, there is much lesser space
+          left, pre-book your parking and save time!!</p>
+      </div>
+      <div class="col-sm-6 relativeDiv">
+        <img src="./Images/Vector.png" alt="car-img" class="carImg">
+        <img src="./Images/Vector2.png" alt="map-img" class="mapImg">
+        <img src="./Images/Vector3.png" alt="locator-img" class="locatorImg">
+      </div>
+    </div>
+  </div>
+  <!-- middle content ends here  -->
+
+  <!-- bottom horizontal rule with circle and arrow  -->
+  <!-- <img src="./Images/hr3.png" alt="" class="bottomHr"> -->
+
+  <div class="bottomHr"></div>
+  <div class="circle"></div>
+  <!-- <img src="./Images/Circle.png" alt="" class="circle"> -->
+  <img src="./Images/Arrow.png" alt="" class="arrow">
+
+  <!-- bottom horizontal rule with circle and arrow ends here -->
+
+
+  <!-- // What we do section  -->
+
+  <span class="wwd">What we do ?</span>
+  <img src="./Images/circle2.png" alt="" class="circle2">
+  <br><br>
+  <div class="card-hr1"></div>
+  <div class="card-hr2"></div>
+  <div class="row">
+    <div class="col-sm-4 ">
+      <div class="card first-card">
+        <div class="card-body">
+          <h5 class="card-title">Discover Places</h5>
+          <p class="card-text">Find parking anywhere, for now, or for later</p>
+          <img src="./Images/cardpic1.png" alt="" class="cardpic1">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 second-card">
+      <div class="card first-card">
+        <div class="card-body">
+          <h5 class="card-title">Pricing</h5>
+          <p class="card-text">Compare prices & pick the place that’s best for you</p>
+          <img src="./Images/cardpic2.png" alt="" class="cardpic2">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 third-card">
+      <div class="card first-card">
+        <div class="card-body">
+          <h5 class="card-title">Booking</h5>
+          <p class="card-text">Book a space in just a few easy clicks</p>
+          <img src="./Images/cardpic3.png" alt="" class="cardpic3">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- what we do section ends here  -->
 </body>
+
 </html>
