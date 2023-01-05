@@ -325,3 +325,189 @@ top: 10px;
   height: 100px;
   width: 140px;
 }
+
+/* why choose us css here  */
+.wcu {
+  margin-top: 100px;
+  position: relative;
+  right: 230px;
+  display: inline-block;
+  border: 2px solid #39b90c;
+  border-radius: 43px;
+  /* padding: 10px; */
+  text-align: left;
+  padding: 5px 50px 5px 10px;
+  /* padding-left: 10px;
+    padding-right: 50px; */
+  font-size: 30px;
+  font-family: "poppins";
+  font-weight: 300;
+}
+
+/* list item editing here  */
+
+
+li {
+  font-size: 22px;
+  font-family: "poppins";
+  text-align: left;
+  color: grey;
+}
+ul {
+  margin-top: 50px;
+  padding-left: 105px;
+  padding-right: 65px;
+}
+
+/* car image editiing here  */
+
+.park-img {
+  position: relative;
+  right: 40px;
+  top: 40px;
+  height: 350px;
+  width: 350px;
+}
+.circle2 {
+  position: relative;
+  left: 15px;
+  bottom: 1px;
+  height: 20px;
+  width: 20px;
+}
+
+/* find us on section here  */
+
+.find {
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: "poppins";
+  position: relative;
+  right: 80px;
+}
+/* lower green line section here  */
+
+.greenLine {
+  border: 1px solid #39b90c;
+  width: 30%;
+  background-color: #39b90c;
+  height: 6px;
+  display: inline-block;
+  position: relative;
+  /* left: 200px; */
+  right: 630px;
+  top: 80px;
+  /* z-index: +1; */
+}
+
+/* social media brands editing starts here  */
+
+.brand {
+  margin-top: 40px;
+}
+.social {
+  height: 50px;
+  width: 50px;
+}
+.fb {
+  position: relative;
+  right: 125px;
+}
+.linked {
+  position: relative;
+  right: 260px;
+}
+.parkyee-brand {
+  position: relative;
+  bottom: 22px;
+}
+
+/* contact us seciton starts here  */
+.contus {
+  margin-top: 100px;
+}
+.contact {
+  display: inline-block;
+  position: relative;
+  right: 50px;
+  font-size: 30px;
+  border: 1px solid #39b90c;
+  padding: 10px 30px 10px 15px;
+  border-radius: 48px;
+  font-family: "poppins";
+  text-align: left;
+}
+.loc{
+    position: relative;
+    top: 40px;
+    right: 140px;
+    height: 54px;
+    width: 38px;
+}
+.tel{
+    position: relative;
+    top: 85px;
+    right: 140px;
+    height: 44px;
+    width: 44px;
+} 
+.msg{
+    position: relative;
+    top: 130px;
+    right: 240px;
+    height: 43px;
+    width: 54px;
+}
+.add{
+    position: relative;
+    left: 100px;
+    font-size: 20px;
+    text-align: left;
+    /* padding-right: 100px; */
+    color: grey;
+}
+.cont{
+    position: relative;
+    left: -15px;
+    color: grey;
+    font-size: 20px;
+    top: 46px;
+ 
+}
+.message{
+    position: relative;
+    left: 45px;
+     color: grey;
+    font-size: 20px;
+    top: 126px;
+}
+.side{
+    position: relative;
+    border: 2px solid grey;
+    border-radius: 46px;
+    text-align: center;
+    width: 330px;
+    height: 270px;
+    /* padding: 100px; */
+    font-size: 20px;
+padding: 30px;
+    top: 200px;
+    left: 140px;
+    color: grey;
+}
+
+
+@media screen and (min-width: 1399px) {
+  .greenLine {
+    border: 1px solid #39b90c;
+    width: 30%;
+    background-color: #39b90c;
+    height: 6px;
+    display: inline-block;
+    position: relative;
+    /* left: 200px; */
+    right: 707px;
+    top: 80px;
+    /* z-index: +1; */
+  }
+}
